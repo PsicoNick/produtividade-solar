@@ -1,0 +1,35 @@
+
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="manifest" href="manifest.json">
+            <title>Produtividade Solar</title>
+            <script>
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('service-worker.js');
+                }
+            </script>
+        </head>
+        <body>
+            <h1>Produtividade Solar</h1>
+            <button onclick="addCase()">Adicionar Caso</button>
+            <button onclick="addCalledCase()">Adicionar Caso Chamado</button>
+            <button onclick="addUnresolvedCase()">Adicionar Caso Não Resolvido</button>
+            <button onclick="subtractCase()">Diminuir Caso</button>
+            <button onclick="sendWhatsApp()">Enviar no WhatsApp</button>
+            <button onclick="sendEmail()">Enviar por Email</button>
+
+            <script>
+                // Funções para gerenciar os casos
+                function addCase() { alert('Caso adicionado!'); }
+                function addCalledCase() { alert('Caso chamado adicionado!'); }
+                function addUnresolvedCase() { alert('Caso não resolvido adicionado!'); }
+                function subtractCase() { alert('Caso diminuído!'); }
+                function sendWhatsApp() { alert('Enviado para o WhatsApp!'); }
+                function sendEmail() { alert('Enviado por Email!'); }
+            </script>
+        </body>
+        </html>
+    
